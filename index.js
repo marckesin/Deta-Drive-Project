@@ -2,22 +2,22 @@ require("dotenv").config();
 const { Deta } = require("deta");
 const express = require("express");
 const upload = require("express-fileupload");
+const path = require("path");
 
 const port = process.env.PORT || 3000;
-
-const app = express();
-
-app.use(upload());
-
 const deta = Deta(process.env.PROJECT_KEY);
 const drive = deta.Drive("arquivos");
 
+const app = express();
+
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
+app.use(upload());
+app.use(express.static(path.join(__dirname, "public")));
+
 app.get('/', (req, res) => {
-    res.send(`
-    <form action="/upload" enctype="multipart/form-data" method="post">
-      <input type="file" name="file">
-      <input type="submit" value="Upload">
-    </form>`);
+    res.render("index");
 });
 
 app.get("/download/:name", async (req, res) => {
