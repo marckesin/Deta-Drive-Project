@@ -29,14 +29,14 @@ app.get("/download/:name", async (req, res) => {
 
 app.get("/files", async (req, res) => {
     await drive.list()
-        .then(result => res.send(result.names));
+        .then(result => res.render("arquivos", { arquivos: result.names }));
 });
 
 app.post("/upload", async (req, res) => {
     const name = req.files.file.name;
     const contents = req.files.file.data;
     const img = await drive.put(name, { data: contents });
-    res.send(img);
+    res.redirect("/files");
 });
 
 app.listen(port);
