@@ -7,7 +7,7 @@
     "start": "node index",
     "devstart": "nodemon index"
   },
-  "keywords": [    
+  "keywords": [
     "nodejs",
     "express",
     "bootstrap5",

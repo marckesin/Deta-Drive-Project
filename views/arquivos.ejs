@@ -1,0 +1,16 @@
+<%- include('../views/partials/header') %>
+
+  <main class="h-100">
+    <section class="py-5 text-center container">
+      <% for(let item of arquivos){ %>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <%= item %>
+          </li>
+        </ul>
+        <% } %>
+    </section>
+  </main>
+  </div>
+
+  <%- include('../views/partials/footer') %>

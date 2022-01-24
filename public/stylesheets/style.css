@@ -1,11 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 
 body{
-    background-color: #207BFB;
-    /* background-color: whitesmoke; */
+    background-color: #f5f5f5;
 }
 
-p{
-    color: #F2FCFC;
+h1, p, a{
     font-family: 'Comfortaa', cursive;
+}
+
+a.nav-link{
+    border-radius: 25px;
+    transition: .3s!important;
+}
+
+a.nav-link:hover{
+    background-color: rgba(177, 0, 255, .1);
+}
+
+.btn{
+    border-radius: 25px;
+}
+
+.img-container{
+    flex-grow: 1;
 }
