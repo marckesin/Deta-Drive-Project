@@ -7,6 +7,9 @@
     "start": "node index",
     "devstart": "nodemon index"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "keywords": [
     "nodejs",
     "express",
