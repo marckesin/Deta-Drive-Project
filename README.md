@@ -2,3 +2,5 @@
 
 Projeto de um serviço de storage na nuvem utilizando Deta Drive ([https://docs.deta.sh/docs/drive/about](https://docs.deta.sh/docs/drive/about)) 
 com um limite de 10GB por conta. 
+
+[![Deploy](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=your-repo-url)
