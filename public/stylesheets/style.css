@@ -17,8 +17,16 @@ a.nav-link:hover{
     background-color: rgba(177, 0, 255, .1);
 }
 
+li:hover .action-btn{
+    visibility: visible;
+}
+
+.action-btn{
+    visibility: hidden;
+}
+
 .btn{
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 .img-container{
