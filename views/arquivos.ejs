@@ -2,13 +2,25 @@
 
   <main class="h-100">
     <section class="py-5 text-center container">
-      <% for(let item of arquivos){ %>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <%= item %>
-          </li>
-        </ul>
-        <% } %>
+      <form action="/" enctype="multipart/form-data" method="post">
+        <% for(let item of arquivos){ %>
+          <ul class="list-group">
+            <li class="list-group-item d-flex">
+              <p class="lead mb-0">
+                <%= item %>
+              </p>
+              <div class="d-flex ms-auto gap-3">
+                <button class="btn btn-success action-btn" type="submit" name="download" value=<%=item %>>
+                  <i class="fas fa-cloud-download-alt fs-4"></i>
+                </button>
+                <button class="btn btn-danger action-btn" type="submit" name="delete" value="<%= item %>">
+                  <i class="fas fa-trash-alt fs-4"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+          <% } %>
+      </form>
     </section>
   </main>
   </div>
