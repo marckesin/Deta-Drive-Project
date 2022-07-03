@@ -29,7 +29,7 @@
     "http-errors": "^2.0.0"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15",
+    "nodemon": "^2.0.18",
     "prettier": "^2.5.1"
   }
 }
