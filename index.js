@@ -32,7 +32,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/download/:name", async (req, res) => {
-  const name = req.params.name;
+  const { name } = req.params;
 
   await drive.get(name).then(async result => {
     if (result) {
