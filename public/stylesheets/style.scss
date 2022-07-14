@@ -6,13 +6,13 @@ a {
     transition: 0.3s !important;
 
     &:hover {
-      background-color: rgba(177, 0, 255, 0.1);
+      background-color: hsla(282, 100%, 50%, 0.1);
     }
   }
 }
 
 body {
-  background-color: #f5f5f5;
+  background-color: hsl(0, 0%, 96%);
   background-image: url("/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
