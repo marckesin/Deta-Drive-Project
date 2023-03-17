@@ -171,6 +171,7 @@ dist
 .vscode
 
 *.map
+.space
 
 # Support for Project snippet scope
 

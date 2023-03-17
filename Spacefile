@@ -1,0 +1,11 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+icon: ./public/images/icon-deta.png
+app_name: "Deta Drive"
+micros:
+  - name: Deta-Drive-Project
+    src: .
+    engine: nodejs16
+    primary: true
+    public_routes:
+      - "/*"
